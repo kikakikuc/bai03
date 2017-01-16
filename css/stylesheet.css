@@ -58,6 +58,9 @@ section h5 {
 section > h5 {
   padding: 0 370px 40px;
 }
+.container-fluid {
+  padding: 0;
+}
 header {
   background-color: #e1e1e1;
 }
@@ -209,9 +212,6 @@ header h6 {
   background-color: white;
   margin-right: 0;
 }
-.three-steps {
-  padding: 100px 0;
-}
 .three-steps .gray-separator {
   margin: 20px auto;
 }
@@ -231,7 +231,7 @@ header h6 {
 .featured-work .gray-separator {
   margin: 20px auto;
 }
-.featured-work figure {
+.featured-work figure img {
   position: relative;
 }
 .featured-work figure figcaption {
@@ -320,6 +320,12 @@ header h6 {
 }
 .portfolio {
   padding: 0;
+  /*.grid:after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+	*/
 }
 .portfolio .gray-separator {
   margin: 20px auto;
@@ -334,9 +340,6 @@ header h6 {
 .portfolio .iso-nav li:hover {
   cursor: pointer;
   color: #e84c3d;
-}
-.portfolio .grid {
-  width: 100%;
 }
 .portfolio .grid figure {
   border: 1px solid #e84c3d;
@@ -357,17 +360,12 @@ header h6 {
 .portfolio .grid figure figcaption p {
   color: white;
 }
-.portfolio .grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .portfolio .item {
-  width: 200px;
+  width: 215px;
   height: 240px;
 }
 .portfolio .item-width-2 {
-  width: 400px;
+  width: 433.33px;
 }
 .portfolio .item-height-2 {
   height: 480px;

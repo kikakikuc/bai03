@@ -65,7 +65,9 @@ section {
 		padding: 0 370px 40px;
 	}
 }
-
+.container-fluid {
+	padding: 0;
+}
 header {
 	background-color: @header-bg;
 	nav {
@@ -213,7 +215,6 @@ header {
 	}
 }
 .three-steps {
-	.SectionPadding;
 	.gray-separator {
 		.Center;
 	}
@@ -238,7 +239,10 @@ header {
 		.Center;
 	}
 	figure {
-		position: relative;
+		img{
+			position: relative;
+		}
+		
 		figcaption {
 			position: absolute;
 			top: 0;
@@ -338,7 +342,6 @@ header {
 		}
 	}
 	.grid {
-		width: 100%;
 		figure {
 			border: 1px solid @orange;
 			position: relative;
@@ -358,17 +361,18 @@ header {
 		}
 
 	}
-	.grid:after {
+	/*.grid:after {
 	  content: '';
 	  display: block;
 	  clear: both;
 	}
+	*/
 	.item {
-		width: 200px;
+		width: 215px;
 		height: 240px;
 	}
 	.item-width-2 {
-		width: 400px;
+		width: 433.33px;
 	}
 	.item-height-2 {
 		height: 480px;
