@@ -1,0 +1,581 @@
+body {
+  margin: 0 auto;
+  color: #81868e;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+.OrangeBg {
+  background-color: #e84c3d;
+  color: white;
+}
+.OrangeButton {
+  background-color: #e84c3d;
+  color: white;
+}
+.OrangeButton a {
+  color: white;
+}
+.OrangeButton:focus,
+.OrangeButton:hover {
+  color: #e84c3d;
+  background: white;
+  border-color: #e84c3d;
+}
+.OrangeButton:focus a,
+.OrangeButton:hover a {
+  color: #e84c3d;
+}
+.Center {
+  margin: 20px auto;
+}
+.SectionPadding {
+  padding: 100px 0;
+}
+a {
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+section h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #333b46;
+}
+section .gray-separator {
+  background-color: #898989;
+  margin: 20px 0;
+  height: 2px;
+  width: 45px;
+}
+section h5 {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 400;
+  color: #81868e;
+  line-height: 150%;
+}
+section > h5 {
+  padding: 0 370px 40px;
+}
+header {
+  background-color: #e1e1e1;
+}
+header nav {
+  background-color: #e1e1e1;
+  padding: 20px 40px;
+}
+header nav .navbar-header h3 {
+  font-family: 'Leckerli One', cursive;
+  color: #e84c3d;
+}
+header nav ul li .separator {
+  height: 2px;
+  width: 50%;
+  background-color: #e84c3d;
+  margin-right: 0;
+  opacity: 0;
+}
+header nav ul li:focus .separator,
+header nav ul li:hover .separator {
+  opacity: 1;
+}
+header nav ul li a {
+  color: #333b46;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 400;
+}
+header nav ul li a:focus,
+header nav ul li a:hover {
+  color: #e84c3d;
+  background-color: #e1e1e1;
+}
+header nav ul .active .separator {
+  opacity: 1;
+}
+header article {
+  padding: 250px 0;
+}
+header article h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #333b46;
+}
+header article p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+header h6 {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #e84c3d;
+  padding: 70px;
+}
+.about-us {
+  background-color: #f3f3f3;
+  padding: 100px 160px;
+}
+.about-us article h5 {
+  padding: 0 70px 30px 0;
+}
+.about-us article .btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: #e84c3d;
+  color: white;
+}
+.about-us article .btn a {
+  color: white;
+}
+.about-us article .btn:focus,
+.about-us article .btn:hover {
+  color: #e84c3d;
+  background: white;
+  border-color: #e84c3d;
+}
+.about-us article .btn:focus a,
+.about-us article .btn:hover a {
+  color: #e84c3d;
+}
+.what-we-do .article-box {
+  padding: 0 100px;
+}
+.what-we-do .article-box article {
+  padding: 30px 0 0 30px;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  margin: 0px 0 20px 0px;
+}
+.what-we-do .article-box article h4,
+.what-we-do .article-box article h5 {
+  color: #81868e;
+}
+.what-we-do .article-box article i {
+  background-color: #e84c3d;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 30px 0;
+}
+.what-we-do .article-box article:focus,
+.what-we-do .article-box article:hover {
+  background-color: #e84c3d;
+  color: white;
+  border-color: #e84c3d;
+}
+.what-we-do .article-box article:focus i,
+.what-we-do .article-box article:hover i {
+  background-color: white;
+  color: #e84c3d;
+}
+.what-we-do .article-box article:focus h4,
+.what-we-do .article-box article:hover h4,
+.what-we-do .article-box article:focus h5,
+.what-we-do .article-box article:hover h5 {
+  color: white;
+}
+.what-we-do .article-box article:focus .gray-separator,
+.what-we-do .article-box article:hover .gray-separator {
+  background-color: white;
+}
+.view-project {
+  margin: 70px 0;
+}
+.view-project figure {
+  position: relative;
+}
+.view-project figure figcaption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10% 0;
+  opacity: 0.8;
+  background-color: #e84c3d;
+  color: white;
+}
+.view-project figure figcaption h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 15px 0;
+}
+.view-project figure figcaption .white-separator {
+  height: 2px;
+  width: 45px;
+  background-color: white;
+  margin-right: 0;
+}
+.three-steps {
+  padding: 100px 0;
+}
+.three-steps .gray-separator {
+  margin: 20px auto;
+}
+.three-steps article i {
+  color: #e84c3d;
+  background-color: #ececec;
+  border: 7px solid white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+}
+.featured-work {
+  background-color: #ececec;
+  padding-top: 100px;
+}
+.featured-work .gray-separator {
+  margin: 20px auto;
+}
+.featured-work figure {
+  position: relative;
+}
+.featured-work figure figcaption {
+  position: absolute;
+  top: 0;
+  width: 85%;
+  height: 85%;
+  margin: 4%;
+  opacity: 0;
+  background-color: #e84c3d;
+  color: white;
+}
+.featured-work figure figcaption button {
+  border-color: white;
+  margin: 30% 0;
+  background-color: #e84c3d;
+  color: white;
+}
+.featured-work figure figcaption button a {
+  color: white;
+}
+.featured-work figure figcaption:focus,
+.featured-work figure figcaption:hover {
+  opacity: 0.7;
+}
+.service {
+  padding: 100px 0;
+}
+.service .gray-separator {
+  margin: 20px auto;
+}
+.service .service-article {
+  background-color: #e84c3d;
+  color: white;
+}
+.service .service-article figure {
+  padding: 0;
+}
+.service .service-article article {
+  padding: 40px 200px;
+}
+.service .service-article article h4,
+.service .service-article article h5 {
+  padding: 20px 0;
+  background-color: #e84c3d;
+  color: white;
+}
+.service .service-article article .white-separator {
+  height: 2px;
+  width: 45px;
+  background-color: white;
+}
+.service .keep-exploring figure {
+  position: relative;
+  padding: 0;
+}
+.service .keep-exploring figure figcaption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 10%;
+  opacity: 0.7;
+}
+.service .keep-exploring figure h2,
+.service .keep-exploring figure h4,
+.service .keep-exploring figure a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+.service .keep-exploring figure h4 {
+  padding: 10px 0;
+}
+.service .keep-exploring figure button {
+  background-color: #e84c3d;
+}
+.service .keep-exploring figure button:focus,
+.service .keep-exploring figure button:hover {
+  background-color: white;
+}
+.service .keep-exploring figure button:focus a,
+.service .keep-exploring figure button:hover a {
+  color: #e84c3d;
+}
+.portfolio {
+  padding: 0;
+}
+.portfolio .gray-separator {
+  margin: 20px auto;
+}
+.portfolio .iso-nav {
+  margin: 40px;
+}
+.portfolio .iso-nav li {
+  color: #333b46;
+}
+.portfolio .iso-nav li:focus,
+.portfolio .iso-nav li:hover {
+  cursor: pointer;
+  color: #e84c3d;
+}
+.portfolio .grid {
+  width: 100%;
+}
+.portfolio .grid figure {
+  border: 1px solid #e84c3d;
+  position: relative;
+  margin: 0;
+}
+.portfolio .grid figure figcaption {
+  position: absolute;
+  top: 0;
+  background-color: #e84c3d;
+  opacity: 0;
+}
+.portfolio .grid figure figcaption:focus,
+.portfolio .grid figure figcaption:hover {
+  opacity: 0.7;
+}
+.portfolio .grid figure figcaption h4,
+.portfolio .grid figure figcaption p {
+  color: white;
+}
+.portfolio .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.portfolio .item {
+  width: 200px;
+  height: 240px;
+}
+.portfolio .item-width-2 {
+  width: 400px;
+}
+.portfolio .item-height-2 {
+  height: 480px;
+}
+.portfolio .subscribe {
+  position: relative;
+}
+.portfolio .subscribe figcaption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #e84c3d;
+  opacity: 0.8;
+}
+.portfolio .subscribe figcaption .col-md-6 {
+  padding: 7% 10%;
+}
+.portfolio .subscribe figcaption .input-group {
+  margin: 30px 0;
+}
+.portfolio .subscribe figcaption .input-group .form-control,
+.portfolio .subscribe figcaption .input-group .input-group-addon {
+  background-color: #e84c3d;
+  color: white;
+  border-radius: 0;
+  border-color: white;
+}
+.portfolio .subscribe h4,
+.portfolio .subscribe p {
+  color: white;
+}
+.crew {
+  padding: 100px 0;
+  background-color: #ececec;
+}
+.crew .gray-separator {
+  margin: 20px auto;
+}
+.crew main figure {
+  position: relative;
+}
+.crew main figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  opacity: 0;
+  padding: 30px 0;
+  margin: 14px;
+  background-color: #e84c3d;
+  color: white;
+}
+.crew main figure figcaption p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+.crew main figure:focus figcaption,
+.crew main figure:hover figcaption {
+  opacity: 0.8;
+}
+.testimonials {
+  position: relative;
+  text-align: center;
+}
+.testimonials figcaption {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  padding: 10% 22%;
+  color: white;
+}
+.testimonials h {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.testimonials h:last-child {
+  color: #e84c3d;
+  padding: 20px;
+}
+.testimonials h4 {
+  font-family: 'OpenSans', sans-serif;
+  color: white;
+}
+.testimonials img {
+  margin: 20px;
+}
+.testimonials p {
+  font-family: 'OpenSans', sans-serif;
+  font-style: Italic;
+  font-size: 16px;
+}
+.testimonials .white-separator {
+  height: 2px;
+  width: 45px;
+  background-color: white;
+  margin: 20px auto;
+}
+.blog {
+  padding: 100px 0;
+}
+.blog .gray-separator {
+  margin: 20px auto;
+}
+.blog figure {
+  position: relative;
+}
+.blog figure figcaption {
+  background-color: #e84c3d;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 20% 15px;
+}
+.blog figure figcaption h4,
+.blog figure figcaption h5 {
+  background-color: #e84c3d;
+  color: white;
+}
+.blog figure figcaption .white-separator {
+  height: 2px;
+  width: 45px;
+  background-color: white;
+  margin: 20px 0;
+}
+.pricing-table .gray-separator {
+  margin: 20px auto;
+}
+.pricing-table ul li {
+  margin: 0 30px;
+}
+.pricing-table ul li:first-child {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px 0;
+}
+.pricing-table ul li button {
+  background-color: #e84c3d;
+  color: white;
+  padding: 5px 30px;
+}
+.pricing-table ul li button a {
+  color: white;
+}
+.pricing-table ul li button:focus,
+.pricing-table ul li button:hover {
+  color: #e84c3d;
+  background: white;
+  border-color: #e84c3d;
+}
+.pricing-table ul li button:focus a,
+.pricing-table ul li button:hover a {
+  color: #e84c3d;
+}
+.get-in-touch {
+  padding: 100px 0;
+}
+.get-in-touch .gray-separator {
+  margin: 20px auto;
+}
+.get-in-touch ul {
+  padding: 40px 0;
+}
+.get-in-touch ul li {
+  margin: 25px 0;
+  font-size: 14px;
+}
+.get-in-touch ul i {
+  color: #e84c3d;
+}
+.get-in-touch form {
+  padding: 0 50px;
+}
+.get-in-touch .form-control,
+.get-in-touch button {
+  border-radius: 0;
+}
+.get-in-touch button {
+  background-color: #e84c3d;
+  color: white;
+}
+.get-in-touch button a {
+  color: white;
+}
+.get-in-touch button:focus,
+.get-in-touch button:hover {
+  color: #e84c3d;
+  background: white;
+  border-color: #e84c3d;
+}
+.get-in-touch button:focus a,
+.get-in-touch button:hover a {
+  color: #e84c3d;
+}
+footer {
+  background-color: #e84c3d;
+  color: white;
+  font-size: 15px;
+}
+footer p {
+  padding: 15px;
+}

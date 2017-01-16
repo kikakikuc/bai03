@@ -1,0 +1,556 @@
+@header-bg: #e1e1e1;
+@light-bg: #f3f3f3;
+@dark-bg: #ececec;
+@orange: #e84c3d;
+@dark-gray: #333b46;
+@light-gray: #81868e;
+
+@pColor: @light-gray; // paragraph color
+@headingColor: @dark-gray;
+body {
+	margin: 0 auto;
+	color: @pColor;
+	background-color: @light-bg;
+	text-align: center;
+}
+.OrangeBg {
+	background-color: @orange;
+	color: white;
+}
+.OrangeButton {
+	.OrangeBg;
+	a {
+		color: white;
+	}
+	&:focus, &:hover {
+		color: @orange;
+		background: white;
+		border-color: @orange;
+		a {
+			color: @orange;
+		}
+	}
+}
+.Center {
+	margin: 20px auto;
+}
+.SectionPadding {
+	padding: 100px 0;
+}
+a{
+	text-decoration: none;
+	&:focus, &:hover {
+		text-decoration: none;
+	}
+}
+section {
+	h4 {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		color: @headingColor;
+	}
+	.gray-separator {
+			background-color: #898989;
+			margin: 20px 0;
+			height: 2px;
+			width: 45px;
+	}
+	h5 {
+		font-family: 'OpenSans', sans-serif;
+		font-weight: 400;
+		color: @light-gray;
+		line-height: 150%;
+	}
+	>h5 {
+		padding: 0 370px 40px;
+	}
+}
+
+header {
+	background-color: @header-bg;
+	nav {
+		background-color: @header-bg;
+		padding: 20px 40px;
+		.navbar-header {
+			h3{
+				font-family: 'Leckerli One', cursive;
+				color: @orange;
+			}
+		}
+		ul {
+			li {
+				.separator {
+					height: 2px;
+					width: 50%;
+					background-color: @orange;
+					margin-right: 0;
+					opacity: 0;
+				}
+				&:focus,&:hover {
+					.separator {
+						opacity: 1;
+					}
+				}
+				a{
+					color: @dark-gray;
+					font-family: 'OpenSans', sans-serif;
+					font-weight: 400;
+					&:focus, &:hover {
+						color: @orange;
+						background-color: @header-bg;
+					}
+				}
+			}
+			.active {
+					.separator {
+						opacity: 1;
+					}
+			}
+		}
+	}
+
+	article {
+		padding: 250px 0;
+		h1 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			color: @headingColor;
+		}
+		p {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+		}
+
+	}
+	h6 {
+		font-family: 'OpenSans', sans-serif;
+		font-size: 12px;
+		font-weight: 400;
+		color: @orange;
+		padding: 70px;
+	}
+}
+
+.about-us {
+	background-color: @light-bg;
+	padding: 100px 160px;
+	article {
+		h5 {
+			padding: 0 70px 30px 0;
+		}
+		.btn {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			.OrangeButton;
+		}
+	}	
+}
+
+.what-we-do {
+	.article-box {
+		padding: 0 100px;
+		article {
+			padding: 30px 0 0 30px;
+			border: 2px solid #ebebeb;
+			border-radius: 5px;
+			margin: 0px 0 20px 0px;
+			h4,
+			h5, {
+				color: @pColor;
+			}
+			i {
+				.OrangeBg;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				padding: 30px 0;
+				
+			}
+			&:focus, &:hover {
+				.OrangeBg;
+				border-color: @orange;
+				i {
+					background-color: white;
+					color: @orange;
+				}
+				h4,
+				h5 {
+					color: white;
+				}
+				.gray-separator {
+					background-color: white;
+				}
+			}
+		}
+	}
+}
+.view-project {
+	margin: 70px 0;
+	figure {
+		position: relative;
+		figcaption{
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			padding: 10% 0;
+			opacity: 0.8;
+			.OrangeBg;
+			h6 {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				padding: 15px 0;
+			}
+			.white-separator {
+				height: 2px;
+				width: 45px;
+				background-color: white;
+				margin-right: 0;
+			}
+		}
+	}
+}
+.three-steps {
+	.SectionPadding;
+	.gray-separator {
+		.Center;
+	}
+	article {
+		i {
+			color: @orange;
+			background-color: @dark-bg;
+			border: 7px solid white;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			padding: 25px;
+		}
+	}
+
+}
+
+.featured-work {
+	background-color: @dark-bg;
+	padding-top: 100px;
+	.gray-separator {
+		.Center;
+	}
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			top: 0;
+			width: 85%;
+			height: 85%;
+			margin: 4%;
+			opacity: 0;
+			.OrangeBg;
+			button {
+				border-color: white;
+				margin: 30% 0;
+				.OrangeBg;
+				a {
+					color: white;	
+				}
+			}
+			&:focus, &:hover {
+				opacity: 0.7;
+			}
+		}
+
+	}
+}
+.service {
+	.SectionPadding;
+	.gray-separator {
+		.Center;
+	}
+	.service-article {
+		.OrangeBg;
+		figure {
+			padding: 0;
+		}
+		article {
+			padding: 40px 200px;
+			h4,h5 {
+				padding: 20px 0;
+				.OrangeBg;
+			}
+			.white-separator {
+				height: 2px;
+				width: 45px;
+				background-color: white;
+			}
+		}
+	}
+
+
+	.keep-exploring {
+		figure {
+			position: relative;
+			padding: 0;
+			figcaption{
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: black;
+				padding: 10%;
+				opacity: 0.7;
+			}
+			h2, h4, a {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				color: white;
+			}
+			h4 {
+				padding: 10px 0;
+			}
+			button {
+				background-color: @orange;
+				&:focus, &:hover {
+					background-color: white;
+					a {
+						color: @orange;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.portfolio {
+	padding: 0;
+	.gray-separator {
+		.Center;
+	}
+	.iso-nav {
+		margin: 40px;
+		li {
+			color: @dark-gray;
+			&:focus, &:hover {
+				cursor: pointer;
+				color: @orange;
+			}
+		}
+	}
+	.grid {
+		width: 100%;
+		figure {
+			border: 1px solid @orange;
+			position: relative;
+			margin: 0;
+			figcaption {
+				position: absolute;
+				top: 0;
+				background-color: @orange;
+				opacity: 0;
+				&:focus, &:hover {
+					opacity: 0.7;
+				}
+				h4, p {
+					color: white;
+				}
+			}
+		}
+
+	}
+	.grid:after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+	.item {
+		width: 200px;
+		height: 240px;
+	}
+	.item-width-2 {
+		width: 400px;
+	}
+	.item-height-2 {
+		height: 480px;
+	}
+	.subscribe {
+		position: relative;
+		figcaption {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			background-color: @orange;
+			opacity: 0.8;
+			.col-md-6 {
+				padding: 7% 10%;
+			}
+			.input-group {
+				margin: 30px 0;
+				.form-control,
+				.input-group-addon {
+					.OrangeBg;
+					border-radius: 0;
+					border-color: white;
+				}
+				
+			}
+		}
+		h4,p {
+			color: white;
+		}
+
+	}
+}
+
+.crew {
+	.SectionPadding;
+	.gray-separator {
+		.Center;
+	}
+	background-color: @dark-bg;
+	main {
+		figure {
+			position: relative;
+			figcaption {
+				position: absolute;
+				bottom: 0;
+				width: 90%;
+				opacity: 0;
+				padding: 30px 0;
+				margin: 14px;
+				.OrangeBg;
+				p {
+					font-family: 'Roboto', sans-serif;
+					font-weight: 300;
+					font-size: 11px;
+				}
+			}
+			&:focus, &:hover {
+					figcaption {
+						opacity: 0.8;
+					}
+				}
+		}
+	}
+}
+.testimonials {
+	position: relative;
+	text-align: center;
+	figcaption {
+		position: absolute;
+		top: 0;
+		background-color: black;
+		opacity: 0.8;
+		width: 100%;
+		height: 100%;
+		padding: 10% 22%;
+		color: white;
+	}
+	h {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		&:last-child {
+			color: @orange;
+			padding: 20px;
+		}
+	}
+	h4 {
+		font-family: 'OpenSans', sans-serif;
+		color: white;
+		
+	}
+	img {
+		margin: 20px;
+	}
+	p {
+		font-family: 'OpenSans', sans-serif;
+		font-style: Italic;
+		font-size: 16px;
+	}
+	.white-separator {
+				height: 2px;
+				width: 45px;
+				background-color: white;
+				margin: 20px auto;
+			}
+}
+.blog {
+	.SectionPadding;
+	.gray-separator {
+		.Center;
+	}
+	figure {
+		position: relative;
+		figcaption {
+			.OrangeBg;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			margin: 0;
+			padding: 20% 15px;
+			h4, h5, {
+				.OrangeBg;
+			}
+			.white-separator {
+				height: 2px;
+				width: 45px;
+				background-color: white;
+				margin: 20px 0;
+			}
+		}
+	}
+}
+.pricing-table {
+	.gray-separator {
+		.Center;
+	}
+	ul{
+		li {
+			margin: 0 30px;
+			&:first-child {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 500;
+				font-size: 20px;
+				padding: 20px 0;
+			}
+			button {
+				.OrangeButton;
+				padding: 5px 30px;
+			}
+		}
+	}
+}
+.get-in-touch {
+	.SectionPadding;
+	.gray-separator {
+		.Center;
+	}
+	ul {
+		padding: 40px 0;
+		li{
+			margin: 25px 0;
+			font-size: 14px;
+		} 
+		i{
+			color: @orange;
+		}
+	}
+	form {
+		padding: 0 50px;
+	}
+	.form-control, button {
+		border-radius: 0;
+	}
+	button {.OrangeButton;}
+}
+footer {
+	.OrangeBg;
+	font-size: 15px;
+	p {
+		padding: 15px;
+	}
+}
