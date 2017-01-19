@@ -34,8 +34,8 @@ body {
 .Center {
 	margin: 20px auto;
 }
-.SectionPadding {
-	padding: 100px 0;
+.SectionPadding(@padding) {
+	padding: @padding 0;
 }
 a{
 	text-decoration: none;
@@ -63,8 +63,14 @@ section {
 	}
 	>h5 {
 		padding: 0 370px 40px;
+		@media only screen and (max-width:768px) {
+			padding: 0 35px 10px;
+		}
 	}
+
 }
+
+
 .container-fluid {
 	padding: 0;
 }
@@ -87,6 +93,9 @@ header {
 					background-color: @orange;
 					margin-right: 0;
 					opacity: 0;
+					@media screen and (max-width:768px) {
+						width: 100%;
+					}
 				}
 				&:focus,&:hover {
 					.separator {
@@ -139,14 +148,23 @@ header {
 	padding: 100px 160px;
 	article {
 		h5 {
-			padding: 0 70px 30px 0;
+			padding-right: 70px;
 		}
 		.btn {
 			font-family: 'Roboto', sans-serif;
 			font-weight: 300;
 			.OrangeButton;
+			margin: 30px 0;
 		}
-	}	
+	}
+	@media screen and (max-width:768px)	{
+		padding: 100px 50px;
+		article {
+			h5 {
+				padding: 0;
+			}
+		}
+	}
 }
 
 .what-we-do {
@@ -156,7 +174,7 @@ header {
 			padding: 30px 0 0 30px;
 			border: 2px solid #ebebeb;
 			border-radius: 5px;
-			margin: 0px 0 20px 0px;
+			margin: 0 0 20px 0;
 			h4,
 			h5, {
 				color: @pColor;
@@ -267,7 +285,7 @@ header {
 	}
 }
 .service {
-	.SectionPadding;
+	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
 	}
@@ -361,21 +379,21 @@ header {
 		}
 
 	}
-	/*.grid:after {
+	.grid:after {
 	  content: '';
 	  display: block;
 	  clear: both;
 	}
-	*/
 	.item {
-		width: 215px;
-		height: 240px;
+		width: 220px;
+		height: 220px;
+		float: left;
 	}
 	.item-width-2 {
-		width: 433.33px;
+		width: 440px;
 	}
 	.item-height-2 {
-		height: 480px;
+		height: 440px;
 	}
 	.subscribe {
 		position: relative;
@@ -408,7 +426,7 @@ header {
 }
 
 .crew {
-	.SectionPadding;
+	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
 	}
@@ -481,7 +499,7 @@ header {
 			}
 }
 .blog {
-	.SectionPadding;
+	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
 	}
@@ -529,7 +547,7 @@ header {
 	}
 }
 .get-in-touch {
-	.SectionPadding;
+	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
 	}
@@ -543,13 +561,18 @@ header {
 			color: @orange;
 		}
 	}
+	@media screen and (max-width:768px) {
+		ul {
+			margin-left: 100px;
+		}
+	}
 	form {
 		padding: 0 50px;
 	}
 	.form-control, button {
 		border-radius: 0;
 	}
-	button {.OrangeButton;}
+	button {.OrangeButton;}	
 }
 footer {
 	.OrangeBg;

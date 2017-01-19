@@ -28,9 +28,6 @@ body {
 .Center {
   margin: 20px auto;
 }
-.SectionPadding {
-  padding: 100px 0;
-}
 a {
   text-decoration: none;
 }
@@ -58,6 +55,11 @@ section h5 {
 section > h5 {
   padding: 0 370px 40px;
 }
+@media only screen and (max-width: 768px) {
+  section > h5 {
+    padding: 0 35px 10px;
+  }
+}
 .container-fluid {
   padding: 0;
 }
@@ -78,6 +80,11 @@ header nav ul li .separator {
   background-color: #e84c3d;
   margin-right: 0;
   opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  header nav ul li .separator {
+    width: 100%;
+  }
 }
 header nav ul li:focus .separator,
 header nav ul li:hover .separator {
@@ -121,13 +128,14 @@ header h6 {
   padding: 100px 160px;
 }
 .about-us article h5 {
-  padding: 0 70px 30px 0;
+  padding-right: 70px;
 }
 .about-us article .btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #e84c3d;
   color: white;
+  margin: 30px 0;
 }
 .about-us article .btn a {
   color: white;
@@ -142,6 +150,14 @@ header h6 {
 .about-us article .btn:hover a {
   color: #e84c3d;
 }
+@media screen and (max-width: 768px) {
+  .about-us {
+    padding: 100px 50px;
+  }
+  .about-us article h5 {
+    padding: 0;
+  }
+}
 .what-we-do .article-box {
   padding: 0 100px;
 }
@@ -149,7 +165,7 @@ header h6 {
   padding: 30px 0 0 30px;
   border: 2px solid #ebebeb;
   border-radius: 5px;
-  margin: 0px 0 20px 0px;
+  margin: 0 0 20px 0;
 }
 .what-we-do .article-box article h4,
 .what-we-do .article-box article h5 {
@@ -320,12 +336,6 @@ header h6 {
 }
 .portfolio {
   padding: 0;
-  /*.grid:after {
-	  content: '';
-	  display: block;
-	  clear: both;
-	}
-	*/
 }
 .portfolio .gray-separator {
   margin: 20px auto;
@@ -360,15 +370,21 @@ header h6 {
 .portfolio .grid figure figcaption p {
   color: white;
 }
+.portfolio .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .portfolio .item {
-  width: 215px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
+  float: left;
 }
 .portfolio .item-width-2 {
-  width: 433.33px;
+  width: 440px;
 }
 .portfolio .item-height-2 {
-  height: 480px;
+  height: 440px;
 }
 .portfolio .subscribe {
   position: relative;
@@ -544,6 +560,11 @@ header h6 {
 }
 .get-in-touch ul i {
   color: #e84c3d;
+}
+@media screen and (max-width: 768px) {
+  .get-in-touch ul {
+    margin-left: 100px;
+  }
 }
 .get-in-touch form {
   padding: 0 50px;
