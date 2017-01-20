@@ -143,7 +143,7 @@ header {
 	}
 }
 
-.about-us {
+#about{
 	background-color: @light-bg;
 	padding: 100px 160px;
 	article {
@@ -203,34 +203,46 @@ header {
 				}
 			}
 		}
-	}
-}
-.view-project {
-	margin: 70px 0;
-	figure {
-		position: relative;
-		figcaption{
-			position: absolute;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			padding: 10% 0;
-			opacity: 0.8;
-			.OrangeBg;
-			h6 {
-				font-family: 'Roboto', sans-serif;
-				font-weight: 400;
-				font-size: 16px;
-				padding: 15px 0;
-			}
-			.white-separator {
-				height: 2px;
-				width: 45px;
-				background-color: white;
-				margin-right: 0;
+		@media screen and (max-width: 768px) {
+			padding: 0;
+			article {
+				h4{
+					text-align: center;
+				}
+				.gray-separator {
+					margin: 0 auto;
+				}
 			}
 		}
 	}
+}
+.view-project {
+	margin: 100px 0;
+	background-image: url(../images/view_project.jpg);
+	background-size: cover;
+	.overlay {
+		.OrangeBg;
+		opacity: 0.9;
+		padding: 100px 210px;
+		.col-md-3 {
+			padding: 20px 0;
+		}
+		h6 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			padding: 15px 0;
+		}
+		.white-separator {
+			height: 2px;
+			width: 45px;
+			background-color: white;
+		}
+		@media screen and (max-width: 768px) {
+			padding: 100px;
+		}
+	}
+
 }
 .three-steps {
 	.gray-separator {
@@ -239,8 +251,8 @@ header {
 	article {
 		i {
 			color: @orange;
-			background-color: @dark-bg;
-			border: 7px solid white;
+			background-color: @light-bg;
+			border: 7px solid @dark-bg;
 			border-radius: 50%;
 			width: 100px;
 			height: 100px;
@@ -266,7 +278,7 @@ header {
 			top: 0;
 			width: 85%;
 			height: 85%;
-			margin: 4%;
+			margin: 5% 4%;
 			opacity: 0;
 			.OrangeBg;
 			button {
@@ -280,11 +292,15 @@ header {
 			&:focus, &:hover {
 				opacity: 0.7;
 			}
+			@media screen and (max-width:768px) {
+				opacity: 0.7;
+				margin: 4% 3%;
+			}
 		}
 
 	}
 }
-.service {
+#services {
 	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
@@ -306,45 +322,48 @@ header {
 				background-color: white;
 			}
 		}
-	}
-
-
-	.keep-exploring {
-		figure {
-			position: relative;
-			padding: 0;
-			figcaption{
-				position: absolute;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				background-color: black;
-				padding: 10%;
-				opacity: 0.7;
-			}
-			h2, h4, a {
-				font-family: 'Roboto', sans-serif;
-				font-weight: 300;
-				color: white;
-			}
-			h4 {
-				padding: 10px 0;
-			}
-			button {
-				background-color: @orange;
-				&:focus, &:hover {
-					background-color: white;
-					a {
-						color: @orange;
-					}
-				}
+		@media screen and (max-width: 768px) {
+			article {
+				padding: 20px 20px;
 			}
 		}
+	}
 
+/** KEEP EXPLORING **/
+
+	.keep-exploring {
+		background-image: url(../images/keep_exploring.jpg);
+		background-size: cover;
+			.overlay{
+				background-color: black;
+				opacity: 0.8;
+				padding: 100px 240px;
+				h2, h4, a {
+					font-family: 'Roboto', sans-serif;
+					font-weight: 200;
+					color: white;
+				}
+				h4 {
+					padding: 20px 0;
+				}
+				button {
+					background-color: @orange;
+					&:focus, &:hover {
+						background-color: white;
+						a {
+							color: @orange;
+						}
+					}
+				}
+				@media screen and (max-width:768px){
+				padding: 100px 0;
+			}
+
+			}
 	}
 }
 
-.portfolio {
+#portfolio {
 	padding: 0;
 	.gray-separator {
 		.Center;
@@ -360,6 +379,7 @@ header {
 		}
 	}
 	.grid {
+
 		figure {
 			border: 1px solid @orange;
 			position: relative;
@@ -385,27 +405,25 @@ header {
 	  clear: both;
 	}
 	.item {
-		width: 220px;
-		height: 220px;
+		width: 210px;
+		height: 210px;
 		float: left;
 	}
 	.item-width-2 {
-		width: 440px;
+		width: 420px;
 	}
 	.item-height-2 {
-		height: 440px;
+		height: 420px;
 	}
 	.subscribe {
-		position: relative;
-		figcaption {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			background-color: @orange;
-			opacity: 0.8;
-			.col-md-6 {
-				padding: 7% 10%;
+		background-image: url(../images/subscribe.jpg);
+		background-size: cover;
+		.overlay {
+			.OrangeBg;
+			opacity: 0.9;
+			padding: 130px 170px;
+			.col-md-6{
+				padding: 0px 20px;
 			}
 			.input-group {
 				margin: 30px 0;
@@ -414,8 +432,10 @@ header {
 					.OrangeBg;
 					border-radius: 0;
 					border-color: white;
-				}
-				
+				}	
+			}
+			@media screen and (max-width:768px){
+				padding: 30px 0;
 			}
 		}
 		h4,p {
@@ -447,6 +467,9 @@ header {
 					font-weight: 300;
 					font-size: 11px;
 				}
+				@media screen and (max-width: 768px) {
+					opacity: 0.8;
+				}
 			}
 			&:focus, &:hover {
 					figcaption {
@@ -457,15 +480,13 @@ header {
 	}
 }
 .testimonials {
-	position: relative;
-	text-align: center;
+	.item {
+		background-image: url(../images/testimonials.jpg);
+		background-size: cover;
+	}
 	figcaption {
-		position: absolute;
-		top: 0;
 		background-color: black;
 		opacity: 0.8;
-		width: 100%;
-		height: 100%;
 		padding: 10% 22%;
 		color: white;
 	}
@@ -498,21 +519,19 @@ header {
 				margin: 20px auto;
 			}
 }
-.blog {
+#blog {
 	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
 	}
 	figure {
-		position: relative;
+		background-image: url(../images/blog.jpg);
+		background-size: cover;
+		padding: 0;
 		figcaption {
 			.OrangeBg;
-			position: absolute;
-			top: 0;
-			right: 0;
+			float: right;
 			width: 50%;
-			height: 100%;
-			margin: 0;
 			padding: 20% 15px;
 			h4, h5, {
 				.OrangeBg;
@@ -522,6 +541,9 @@ header {
 				width: 45px;
 				background-color: white;
 				margin: 20px 0;
+			}
+			h6 {
+				padding: 10px 0;
 			}
 		}
 	}
@@ -546,7 +568,7 @@ header {
 		}
 	}
 }
-.get-in-touch {
+#contact {
 	.SectionPadding(100px);
 	.gray-separator {
 		.Center;
@@ -561,13 +583,11 @@ header {
 			color: @orange;
 		}
 	}
-	@media screen and (max-width:768px) {
-		ul {
-			margin-left: 100px;
-		}
-	}
 	form {
 		padding: 0 50px;
+		@media screen and (max-width:768px) {
+			padding: 0px;
+		}
 	}
 	.form-control, button {
 		border-radius: 0;
